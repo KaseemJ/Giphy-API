@@ -3,7 +3,29 @@
 <head>
 	<title>Giphy API</title>
 </head>
+
 <body>
+
+<h1>Add an Athlete</h1>
+
+<!-- We'll be dumping our JSON contents in here -->
+<div id="sports-athlete"></div>
+
+<!-- This form will be where users input data about the movies -->
+<form id="sports-athlete">
+	<label for="sports-input">Search for athlete</label>
+	<input type="text" id="sports-input"><br>
+
+	<!-- This button will trigger our AJAX call -->
+    <input id="find-athlete" type="submit" value="Athlete Search">
+</form>
+
+<br>
+<br>
+
+<div id="gifs-appear-here">
+</div>
+
 <button style="background-color: teal;" data-person="Basketball">Lebron James</button>
 <button style="background-color: teal;" data-person="Football">Aaron Rogers</button>
 <button style="background-color: teal;" data-person="World Cup">Cristiano Ronaldo</button>
@@ -12,17 +34,16 @@
 <button style="background-color: teal;" data-person="Tennis">Serena Williams</button>
 <button style="background-color: teal;" data-person="Golf">Tiger Woods</button>
 
-<div id="gifs-appear-here">
-</div>
+<br>
+<br>
 
-
-
-
+<img src="https://static4.pagesjaunes.fr/media/cviv/09557034_NV_0001_photo.jpg" 
+    style="height:700px;width:900px;" alt="25"/>
 
 
 <!-- jQuery JS -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Code to the JavaScript File -->
-  <script src="Giphy.js"></script>
+<script src="Giphy.js"></script>
 </body>
 </html>
