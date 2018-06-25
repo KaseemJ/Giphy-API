@@ -8,8 +8,7 @@ var person = $(this).attr("data-person");
 
 // Constructing a URL to search Giphy for the name
 
-var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC" +
-     person + "&api_key=dc6zaTOxFJmzC&limit=10";
+//var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC" + person + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 //var APIKey = "i2mGt7k4JmILrm6IzrZyyOPieVxSOHhH";
 
