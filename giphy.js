@@ -67,15 +67,11 @@ gifDiv.append(personImage);
 // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
 $("#gifs-appear-here").prepend(gifDiv);
 
-
-
 			  }
   		  }
   	  })
 
    });
-
-
 
 $(".sports-search").on("click", function(event) {
 
@@ -89,6 +85,21 @@ queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=i2mGt7
 
 // *** figure out the URL for this code ***
 //var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+$(" img.gif").on("click", function(){ 
+  alert("hello")
+})
+
+var person = $(this).attr("sports-search");
+      // If the clicked image's state is still, update its src attribute to what its data-animate value is.
+      // Then, set the image's data-state to animate
+      // Else set src to the data-still value
+      if (person === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("sports-search", "animate");
+      } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("sports-search", "still");
+      }
 
 
 $.ajax({
@@ -132,9 +143,10 @@ gifDiv.append(personImage);
 $("#gifs-appear-here").prepend(gifDiv);
 
 
-
 			  }
   		  }
   	  })
 
    });
+
+
